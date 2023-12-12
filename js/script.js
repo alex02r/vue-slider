@@ -70,6 +70,9 @@ createApp({
             }else{
                 this.imageCurrent--;
             }
+        },
+        changeImage(i){
+            this.imageCurrent = i;
         }
     }
 }).mount('#app');
