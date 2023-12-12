@@ -55,5 +55,14 @@ createApp({
                 }
             ]
         }
+    },
+    methods: {
+        nextImg(){
+            if (this.imageCurrent == this.slides.length - 1) {
+                this.imageCurrent = 0;
+            }else{
+                this.imageCurrent++;
+            }
+        }
     }
 }).mount('#app');
