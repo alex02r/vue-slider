@@ -26,6 +26,7 @@ const { createApp } = Vue;
 createApp({
     data(){
         return{
+            imageCurrent: 0,
             slides: [
                 {
                     image: 'img/01.webp',
