@@ -77,10 +77,13 @@ createApp({
             this.imageCurrent = i;
         },
         autoScrollPlay(){
-            this.scroll = true;
-            this.autoscroll = setInterval(()=>{
+            if (!this.scroll) {
+                this.scroll = true;
+                this.autoscroll = setInterval(()=>{
                 this.nextImg();
-            },3000)
+                },3000)
+            }
+            
         },
         autoScrollStop(){
             clearInterval(this.autoscroll);
